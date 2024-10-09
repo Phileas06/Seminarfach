@@ -1,0 +1,16 @@
+:root {
+    --color: #346047;
+    --font: 'Fredoka';
+    --accentColor: #599272;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+

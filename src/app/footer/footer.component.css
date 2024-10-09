@@ -1,0 +1,101 @@
+section {
+    height: 400px;
+    width: 100%;
+    background-color: #f1f1f2;
+}
+
+.container-information {
+    position: relative;
+    height: 300px;
+    width: 1100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    width: 300px;
+    height: 100%;
+}
+
+.infoText {
+    color: #454545;
+    font-family: var(--font, sans-serif);
+    text-align: justify;
+}
+
+.infoText p {
+    position: relative;
+    top: 80px;
+}
+
+.container-keepTouch p {
+    font-family: var(--font, sans-serif);
+    font-size: 24px;
+    position: relative;
+    top: 80px;
+    margin-left: 40px;
+    font-weight: 500;
+    color: var(--color, #000);
+}
+
+.container-keepTouch a {
+    display: block;
+    margin: 10px 0 0;
+    height: 50px;
+    width: auto
+}
+
+.container-symbols {
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container-symbols .img-insta img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.container-symbols .img-mail img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.container-symbols a img:hover {
+    filter: invert(40%);
+}
+
+hr {
+    width: 1200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-policies {
+    font-family: var(--font, sans-serif);
+    font-size: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 32px;
+}
+
+.container-policies a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container-policies a:hover {
+    text-decoration: underline;
+    color: var(--color, gray);
+}

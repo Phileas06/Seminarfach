@@ -1,0 +1,53 @@
+<section class="row-1">
+    <img class="img-1" src="/images/fluss.png" alt="">
+    <h2>
+        Athesa in Ohr
+    </h2>
+    <p>Irgendein motivierender Text von Richard</p>
+</section>
+<section class="row-2">
+    <div class="container-flex">
+        @for (section of websiteSections; track $index) {
+        @if (section !== isActive) {
+
+        <a [ngClass]="{'highlighted' : isActive === section}" (click)="interactNavBar(section, $event)"
+            [href]="getHref(section)">
+            <div class="container-content">
+                <img class="img-symbol" [src]="websiteSectionsImages[$index]" alt="{{ getSectionName(section) }}">
+                <p>{{ getSectionName(section) }}</p>
+            </div>
+            <img class="img-arrow" src="/images/arrow.png" alt="Arrow">
+        </a>
+
+        }
+        }
+    </div>
+</section>
+<section class="row-3">
+    <div class="container-img">
+        <h2>Bilder</h2>
+        <div class="container-grid">
+            <a class="news news-1" href="">
+                <img src="/images/placeholder.png" alt="placeholder">
+                <h3>Header</h3>
+                <p>Hier kommt irgendein Text über das Bild hin, indem beschrieben wird, was man hier sehen kann, usw.
+                </p>
+            </a>
+            <a class="news news-2" href="">
+                <img src="/images/placeholder.png" alt="placeholder">
+                <h3>Header</h3>
+                <p>Hier kommt irgendein Text über das Bild hin, indem beschrieben wird, was man hier sehen kann, usw.
+                </p>
+            </a>
+            <a class="news news-3" href="">
+                <img src="/images/placeholder.png" alt="placeholder">
+                <h3>Header</h3>
+                <p>Hier kommt irgendein Text über das Bild hin, indem beschrieben wird, was man hier sehen kann, usw.
+                </p>
+            </a>
+        </div>
+        <div class="container-seeMore">
+            <a href=""> <img src="/images/more.png" alt="more-icon"> See More</a>
+        </div>
+    </div>
+</section>

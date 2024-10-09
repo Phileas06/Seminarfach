@@ -1,0 +1,38 @@
+<div class="container-nav"></div>
+<nav>
+    <div class="logo"></div>
+    <div class="content">
+        <a [ngClass]="{'highlighted' : isActive === 1}" (click)="interactNavBar(1, $event)" href="/">Startseite</a>
+        <a [ngClass]="{'highlighted' : isActive === 2}" (click)="interactNavBar(2, $event)" href="/about">Über Uns</a>
+        <a [ngClass]="{'highlighted' : isActive === 3}" (click)="interactNavBar(3, $event)" href="/project">Projekt</a>
+        <a [ngClass]="{'highlighted' : isActive === 4}" (click)="interactNavBar(4, $event)" href="/protocols">Protokolle</a>
+    </div>
+    <div class="menu menu-hover" (mouseenter)="dropdown()">
+        <div class="container-menu">
+            <img class="menu-img" src="/images/menu.png" alt="menu">
+            <img #menuHoverImage class="menu-hover-img" src="/images/menu-hover.png" alt="menu">
+        </div>
+    </div>
+    <div #containerMore class="container-more menu-hover" (mouseleave)="dropup()">
+        <div #containerContent class="container-content">
+            <div class="row row-1">
+                <h2>Informationen</h2>
+                <a href="/">Home</a> <br>
+                <a href="/about">About Us</a><br>
+                <a href="/faq">FAQ</a><br>
+                <a href="/privacy">Datenschutzerklärung</a>
+            </div>
+            <div class="row row-2">
+                <h2>Projekte und Inhalte</h2>
+                <a href="/project">Projekt</a><br>
+                <a href="/images">Bilder</a><br>
+                <a href="/protocols">Protokolle</a>
+            </div>
+            <div class="row row-3">
+                <h2>Credits</h2>
+                <a href="/icons">Icons from Flaticon</a><br>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-nav"></div>
